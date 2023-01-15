@@ -20,7 +20,7 @@ const store = createStore({
     },
     setUser: (state, userData) => {
       state.user.data = {
-        ...userData.user,
+        email: userData.email,
         name: 'Tom Cook',
         imageUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
       };
@@ -29,5 +29,5 @@ const store = createStore({
   },
   modules: {}
 });
-
+// ...userData.user,
 export default store;

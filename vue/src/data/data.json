@@ -1,0 +1,44 @@
+[
+  {
+    "id":"1",
+    "name":"product 1",
+    "description":"Lorem ipsum dolor sit amet",
+    "image":"https://picsum.photos/id/19/200/200",
+    "price":"$300"
+  },
+  {
+    "id":"2",
+    "name":"product 2",
+    "description":"Lorem ipsum dolor sit amet",
+    "image":"https://picsum.photos/id/10/200/200",
+    "price":"$100"
+  },
+  {
+    "id":"3",
+    "name":"product 3",
+    "description":"Lorem ipsum dolor sit amet",
+    "image":"https://picsum.photos/id/8/200/200",
+    "price":"$150"
+  },
+  {
+    "id":"4",
+    "name":"product 4",
+    "description":"Lorem ipsum dolor sit amet",
+    "image":"https://picsum.photos/id/49/200/200",
+    "price":"$300"
+  },
+  {
+    "id":"5",
+    "name":"product 5",
+    "description":"Lorem ipsum dolor sit amet",
+    "image":"https://picsum.photos/id/20/200/200",
+    "price":"$100"
+  },
+  {
+    "id":"6",
+    "name":"product 6",
+    "description":"Lorem ipsum dolor sit amet",
+    "image":"https://picsum.photos/id/84/200/200",
+    "price":"$150"
+  }
+]
