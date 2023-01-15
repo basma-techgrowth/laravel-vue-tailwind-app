@@ -20,6 +20,11 @@ const router = useRouter()
 </script>
 
 <template>
+  <div class="flex items-center gap-4 justify-center">
+    <img src="../assets/laravel-2.png" class="w-20 h-20" alt="laravel">
+    <img src="../assets/vue.svg" class="w-20 h-20" alt="vue">
+    <img src="../assets/tailwind.png" class="w-20 h-20" alt="tailwind">
+  </div>
   <div>
     <h2 class="mt-6 text-center text-3xl font-bold tracking-tight text-green-900">
       Sign in

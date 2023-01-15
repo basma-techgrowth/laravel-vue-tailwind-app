@@ -30,4 +30,5 @@ const store = createStore({
   modules: {}
 });
 // ...userData.user,
+//userData.email
 export default store;

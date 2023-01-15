@@ -39,12 +39,12 @@ function logout() {
       <!-- menu items desktop -->
       <nav class="mt-4 flex flex-col gap-4 relative">
           <div @click="logout"
-          class="flex gap-2 px-3 items-center py-2  bg-green-900 rounded-md whitespace-pre"
+          class="flex gap-2 px-3 items-center py-2  bg-green-900 rounded-md"
           v-if="isOpen">
           <img :src="user.imageUrl" class="h-10 w-10 rounded-full" alt="">
           <div class="flex flex-col justify-start text-sm font-medium text-white w-full ">
             <a @click="logout" class="cursor-pointer py-1 px-1 hover:bg-green-600 rounded-md w-fit ">Sign out </a>
-            <span class="block py-1 px-1">{{ user.email }}</span>
+            <!-- <span class="block text-red-500 text-sm py-1 px-1">{{ user.email }}</span> -->
           </div>
         </div>
         <router-link v-for="item in navigation" :key="item.name" :to="item.to"
@@ -59,7 +59,7 @@ function logout() {
     <!-- sidenav mobile begining -->
     <div class="bg-green-700 h-16 w-full md:hidden px-4 relative duration-500">
       <!-- menu bar icon -->
-      <button :class="[isOpen ? 'left-1/3' : 'left-5', 'absolute top-4 text-white z-10 duration-500']">
+      <button :class="[isOpen ? 'hidden' : 'justify-start', 'flex mt-4 text-white duration-500']">
         <component :is="isOpen ? XMarkIcon : Bars3Icon" class="block h-8 w-8 cursor-pointer"
           @click="isOpen = !isOpen" />
       </button>
@@ -68,14 +68,20 @@ function logout() {
       <!-- modal menu -->
       <div :class="[isOpen?'w-72':'w-0 overflow-hidden','absolute top-0 left-0 bg-green-700 min-h-screen duration-500']">
         <!-- menu items desktop -->
-      <nav class="mt-20 flex flex-col gap-2 relative px-4 duration-500">
+        <div class="w-full mt-4 pr-4 flex justify-end text-white">
+          <button>
+            <component :is="isOpen ? XMarkIcon : Bars3Icon" class="block h-8 w-8 cursor-pointer"
+          @click="isOpen = !isOpen" />
+          </button>
+        </div>
+      <nav class="mt-8 flex flex-col gap-2 relative px-4 duration-500">
         <div @click="logout"
           class="flex gap-4 px-3 items-center py-2  bg-green-900 rounded-md whitespace-pre"
           v-if="isOpen">
           <img :src="user.imageUrl" class="h-10 w-10 rounded-full" alt="">
           <div class="flex flex-col justify-start text-sm font-medium text-white w-full ">
             <a @click="logout" class="cursor-pointer py-1 px-1 hover:bg-green-600 rounded-md w-fit ">Sign out </a>
-            <span class="block py-1 px-1">{{ user.email }}</span>
+            <!-- <span class="block py-1 px-1">{{ user.email }}</span> -->
           </div>
         </div>
         <router-link v-for="item in navigation" :key="item.name" :to="item.to"
