@@ -1,7 +1,8 @@
 <script setup>
+import BarChart from '../components/BarChart.vue';
 import PageComponent from '../components/PageComponent.vue';
 </script>
-
+ 
 <template>
   <PageComponent title="dashboard">
     <div class="flex flex-col gap-4">
@@ -10,7 +11,8 @@ import PageComponent from '../components/PageComponent.vue';
     </section>
     <section class="flex w-full gap-4 md:flex-row flex-col">
       <article class="h-60 md:w-1/2 bg-white shadow flex items-center justify-center">
-        <h1>stat one</h1>
+        <!-- <h1>stat one</h1> -->
+        <BarChart/>
       </article>
       <article class="h-60 md:w-1/2 bg-white shadow flex items-center justify-center">
         <h1>stat two</h1>

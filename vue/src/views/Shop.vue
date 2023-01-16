@@ -10,14 +10,13 @@ import Product from "../components/Product.vue"
       <div class="h-20 w-full bg-white shadow flex items-center justify-center font-bold">
         <h1>Random Stuff For Sale</h1>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 col-span-full  gap-4 items-center justify-center">
+      <div class="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 col-span-full gap-4 items-center justify-center">
         <div v-for="item in data" class="w-full">
           <router-link :to="`/shop/${item.id}`">
-             <Product :title="item.name" :images="item.image" :price="item.price" :key="item.id"/>
+            <Product :title="item.name" :images="item.image" :price="item.price" :key="item.id" />
           </router-link>
+        </div>
       </div>
-      </div>
-      
     </div>
   </PageComponent>
 </template>
