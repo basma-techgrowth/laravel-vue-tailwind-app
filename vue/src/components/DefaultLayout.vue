@@ -64,7 +64,7 @@ function logout() {
           @click="isOpen = !isOpen" />
       </button>
       <!-- overlay -->
-      <div :class="[isOpen?'absolute top-0 left-0 w-full bg-black opacity-50 min-h-screen':'hidden','duration-500']"></div>
+      <div :class="[isOpen?'absolute top-0 left-0 w-full bg-black opacity-50 min-h-screen':'hidden','duration-500']" @click="isOpen = !isOpen"></div>
       <!-- modal menu -->
       <div :class="[isOpen?'w-72':'w-0 overflow-hidden','absolute top-0 left-0 bg-green-700 min-h-screen duration-500']">
         <!-- menu items desktop -->
