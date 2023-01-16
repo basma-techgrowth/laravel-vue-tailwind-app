@@ -12,7 +12,9 @@ import Product from "../components/Product.vue"
       </div>
       <div class="grid grid-cols-2 md:grid-cols-3 col-span-full  gap-4 items-center justify-center">
         <div v-for="item in data" class="w-full">
-        <Product :title="item.name" :images="item.image" :price="item.price" :key="item.id"/>
+          <router-link :to="`/shop/${item.id}`">
+             <Product :title="item.name" :images="item.image" :price="item.price" :key="item.id"/>
+          </router-link>
       </div>
       </div>
       

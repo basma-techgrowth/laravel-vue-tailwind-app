@@ -5,6 +5,7 @@ import store from "../store";
 import Dashboard from "../views/Dashboard.vue";
 import Login from "../views/Login.vue";
 import Shop from "../views/Shop.vue";
+import ProductDetail from "../components/ProductDetail.vue"
 const routes = [
   {
     path: '/',
@@ -18,6 +19,11 @@ const routes = [
         path: '/shop',
         name: 'Shop',
         component: Shop
+      },
+      {
+        path: '/shop/:id',
+        name: 'ProductDetail',
+        component: ProductDetail
       }
     ]
   },
