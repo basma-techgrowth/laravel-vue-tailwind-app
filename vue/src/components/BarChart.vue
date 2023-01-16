@@ -15,7 +15,11 @@ export default {
           { 
             label: 'Dataset 1',
             data: [40, 20, 12],
-            backgroundColor: '#9BD0F5',
+            backgroundColor: [
+              'rgb(255, 99, 132)',
+              'rgb(54, 162, 235)',
+              'rgb(255, 205, 86)'
+            ],
           } 
         ]
       },
